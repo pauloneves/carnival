@@ -5,14 +5,20 @@ SC.getParadesHTML = function(parades) {
     for (var day=0 , length=parades.length; day<length; day++) {
         var diaHtml = '<div class="col-6 col-sm-6 col-lg-4">' +
                       '<h3>' +  parades[day][0].dia_title + '</h3><p><ul>';
+        var atLeastOne = 0;
         for (var i= 0, dayLength=parades[day].length; i<dayLength; i++) {
             var parade = parades[day][i];
-            diaHtml += '<li>' +  parade.nome +  ', ' + parade.hora +
-                        ', ' + parade.bairro + '</li>';
+            if (parade.bairro === 'Centro' || parade.bairro === 'Lapa') {
+                diaHtml += '<li>' +  parade.nome +  ', ' + parade.hora.substring(0,2)
+                           + 'h <span class="glyphicon glyphicon-heart-empty"></span></li>';
+                atLeastOne++;
+            }
 
         }
         diaHtml += '</ul></p></div>';
-        all.push(diaHtml);
+        if (atLeastOne  >  2) {
+            all.push(diaHtml);
+        }
     }
     return all;
 }
