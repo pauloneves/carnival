@@ -4,7 +4,7 @@ SC.getParadesHTML = function(parades) {
     var all = [];
     for (var day=0 , length=parades.length; day<length; day++) {
         var diaHtml = '<div class="col-6 col-sm-6 col-lg-4">' +
-                      '<h2>' +  parades[day][0].dia_title + '</h2><p><ul>';
+                      '<h3>' +  parades[day][0].dia_title + '</h3><p><ul>';
         for (var i= 0, dayLength=parades[day].length; i<dayLength; i++) {
             var parade = parades[day][i];
             diaHtml += '<li>' +  parade.nome +  ', ' + parade.hora +

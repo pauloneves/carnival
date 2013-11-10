@@ -1,0 +1,2 @@
+* dia da semana menor ficou com o <h3>  tem que manter semântico com <h2> e apenas diminuir o tamanho
+*  tirar hack $('#mainTabs a:first').tab('show'); para ter tab inicial selecionada
