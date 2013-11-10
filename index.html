@@ -39,7 +39,7 @@
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav " id="mainTabs">
                <li><a href="#parades" data-toggle="tab">All parades</a></li>
-               <li><a href="#itinerary" data-toggle="tab">My itinerary</a></li>
+               <li><a href="#itinerary" data-toggle="tab" onclick="SC.copyFavorites()">My itinerary</a></li>
                <li><a href="#friends" data-toggle="tab">Friends</a></li>
             </ul>
         </div><!--/.navbar-collapse -->
@@ -67,14 +67,42 @@
 
     <div class="tab-pane fade" id="itinerary">
 
-    <div class="jumbotron">
+    <div class="jumbotron" id="itinerary-message">
       <div class="container">
         <h1>Your itinerary here!</h1>
         <p>Select <a href="#parades" onclick="$('#mainTabs a:first').tab('show')">some parades</a> as your favorites clicking in the
-            <span class="glyphicon glyphicon-star-empty"></span> beside their name.
+            <span class="glyphicon glyphicon-heart-empty"></span> beside their name.
             They will be listed here.</p>
       </div>
     </div>
+
+    <div class="jumbotron" id="itinerary-share-message">
+      <div class="container">
+        <h1>Share!</h1>
+        <p>
+            <a title="send to Facebook"
+               href="http://www.facebook.com/sharer.php?s=100&p[title]=Here is my carnival itinerary&p[summary]=Come play carnival with me.&p[url]=http://carnival-rio.herokuapp.com">
+              Tell your friends
+                <img width="20" height="20" src="img/facebook-logo-3.png" alt="Facebook" />
+            </a>
+            <a href=" http://www.facebook.com/share.php?u=http://carnival-rio.herokuapp.com/"></a>
+            which parades you plan to attend.
+        </p>
+      </div>
+    </div>
+
+    <div class="container">
+      <!-- Example row of columns -->
+      <div class="row" id="favorite_parades">
+
+      </div>
+
+      <hr>
+
+      <footer>
+        <p>HCI Coursera 2013</p>
+      </footer>
+    </div> <!-- /container -->
 
     </div> <!-- itinerary tab -->
 
@@ -111,6 +139,9 @@
                  $('#mainTabs a:first').tab('show');
              })
             $(document).ready(SC.displayParades);
+            $('#carnival_parades').on('click', '.favorite', SC.changeFavorite);
+            $('#itinerary').click(SC.copyFavorites);
+            $('#itinerary-share-message').hide();
         </script>
         <!--
         <script>

@@ -4,19 +4,10 @@
    Author's custom styles
    ========================================================================== */
 
+.favorite:hover {
+    cursor: pointer;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.glyphicon-heart {
+    color: red;
+}

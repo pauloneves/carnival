@@ -5,3 +5,6 @@ DEPOIS
 *  tirar hack $('#mainTabs a:first').tab('show'); para ter tab inicial selecionada
 * as tabs aparecem apenas quando já está muito largo (imagino que largura média)
 *  descobrir como  linkar para a aba correta
+* fazer link para a página de bloco específico, mesmo que seja stub
+* colocar número de blocos e de de amigos nas abas
+* tirar o onclick local
