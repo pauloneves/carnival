@@ -10,4 +10,9 @@
 
 .glyphicon-heart {
     color: red;
+    font-size: 130%;
+}
+
+.glyphicon-heart-empty {
+    font-size: 130%;
 }

@@ -110,19 +110,134 @@
 
     <div class="jumbotron">
       <div class="container">
-        <h1>Still no friends here :-(</h1>
+        <h1 id="friends-header">Still no friends here :-(</h1>
         <p>Your friends must also select their favorite parades to be listed here.
-            <a title="send to Facebook"
-               href="http://www.facebook.com/sharer.php?s=100&p[title]=Create your carnival itinerary&p[summary]=Select your favorite carnival parades so your friends can see where you will play carnival&p[url]=http://carnival-rio.herokuapp.com">
+            <a title="Call your friends!"
+               href="http://www.facebook.com/sharer.php?s=100&p[title]=Create your carnival itinerary&p[summary]=Select your favorite carnival parades so your friends can see where you will play carnival&p[url]=http://carnival-rio.herokuapp.com"
+               target=_blank onclick="SC.friendsCalled()">
               Invite your friends
                 <img width="20" height="20" src="img/facebook-logo-3.png" alt="Facebook" />
             </a>
             <a href=" http://www.facebook.com/share.php?u=http://carnival-rio.herokuapp.com/"></a>
-            to make their carnival itinerary here.
+            to make their carnival itinerary.
+            <small>(note to evaluators: comeback to this page after clicking in the link above)</small>
         </p>
       </div>
     </div>
 
+      <div class="row" id="friends-parades">
+      <div class="col-6 col-sm-6 col-lg-4 dia_desfile">
+          <h3>Cordão do Boitatá</h3>
+          <p>
+              <img src="img/faces/FD01.png" width="48" height="48" alt="Facebook friend">
+              <img src="img/faces/D01.png" width="48" height="48" alt="Facebook friend">
+              <img src="img/faces/FA01.png" width="48" height="48" alt="Facebook friend">
+              <img src="img/faces/D02.png" width="48" height="48" alt="Facebook friend">
+              <img src="img/faces/D05.png" width="48" height="48" alt="Facebook friend">
+              <img src="img/faces/FA01.png" width="48" height="48" alt="Facebook friend">
+              <img src="img/faces/A02.png" width="48" height="48" alt="Facebook friend">
+              <img src="img/faces/B01.png" width="48" height="48" alt="Facebook friend">
+              <img src="img/faces/D02.png" width="48" height="48" alt="Facebook friend">
+              <img src="img/faces/C01.png" width="48" height="48" alt="Facebook friend">
+              <img src="img/faces/FC01.png" width="48" height="48" alt="Facebook friend">
+              <img src="img/faces/FD02.png" width="48" height="48" alt="Facebook friend">
+          </p>
+      </div>
+      <div class="col-6 col-sm-6 col-lg-4 dia_desfile">
+          <h3>Embaixadores da Folia da Cidade Maravilhosa </h3>
+          <p>
+              <img src="img/faces/FA01.png" width="48" height="48" alt="Facebook friend">
+              <img src="img/faces/D02.png" width="48" height="48" alt="Facebook friend">
+              <img src="img/faces/D05.png" width="48" height="48" alt="Facebook friend">
+              <img src="img/faces/D01.png" width="48" height="48" alt="Facebook friend">
+              <img src="img/faces/FD01.png" width="48" height="48" alt="Facebook friend">
+              <img src="img/faces/FA01.png" width="48" height="48" alt="Facebook friend">
+              <img src="img/faces/FB01.png" width="48" height="48" alt="Facebook friend">
+              <img src="img/faces/FC01.png" width="48" height="48" alt="Facebook friend">
+              <img src="img/faces/A01.png" width="48" height="48" alt="Facebook friend">
+              <img src="img/faces/B01.png" width="48" height="48" alt="Facebook friend">
+              <img src="img/faces/C02.png" width="48" height="48" alt="Facebook friend">
+              <img src="img/faces/D03.png" width="48" height="48" alt="Facebook friend">
+              <img src="img/faces/FD03.png" width="48" height="48" alt="Facebook friend">
+          </p>
+      </div>
+      <div class="col-6 col-sm-6 col-lg-4 dia_desfile">
+          <h3>Bloco das Carmelitas </h3>
+          <p>
+              <img src="img/faces/FA01.png" width="48" height="48" alt="Facebook friend">
+              <img src="img/faces/D02.png" width="48" height="48" alt="Facebook friend">
+              <img src="img/faces/D05.png" width="48" height="48" alt="Facebook friend">
+              <img src="img/faces/B01.png" width="48" height="48" alt="Facebook friend">
+              <img src="img/faces/FB01.png" width="48" height="48" alt="Facebook friend">
+              <img src="img/faces/FC03.png" width="48" height="48" alt="Facebook friend">
+          </p>
+      </div>
+      <div class="col-6 col-sm-6 col-lg-4 dia_desfile">
+          <h3>Aconteceu </h3>
+          <p>
+              <img src="img/faces/FD01.png" width="48" height="48" alt="Facebook friend">
+              <img src="img/faces/A01.png" width="48" height="48" alt="Facebook friend">
+              <img src="img/faces/B01.png" width="48" height="48" alt="Facebook friend">
+              <img src="img/faces/C02.png" width="48" height="48" alt="Facebook friend">
+              <img src="img/faces/D03.png" width="48" height="48" alt="Facebook friend">
+              <img src="img/faces/FD03.png" width="48" height="48" alt="Facebook friend">
+          </p>
+      </div>
+      <div class="col-6 col-sm-6 col-lg-4 dia_desfile">
+          <h3>Orquestra Voadora </h3>
+          <p>
+              <img src="img/faces/FA01.png" width="48" height="48" alt="Facebook friend">
+              <img src="img/faces/FB01.png" width="48" height="48" alt="Facebook friend">
+              <img src="img/faces/FC01.png" width="48" height="48" alt="Facebook friend">
+              <img src="img/faces/A01.png" width="48" height="48" alt="Facebook friend">
+          </p>
+      </div>
+      <div class="col-6 col-sm-6 col-lg-4 dia_desfile">
+          <h3>Mulheres de Chico </h3>
+          <p>
+              <img src="img/faces/B01.png" width="48" height="48" alt="Facebook friend">
+              <img src="img/faces/FB01.png" width="48" height="48" alt="Facebook friend">
+              <img src="img/faces/FC03.png" width="48" height="48" alt="Facebook friend">
+              <img src="img/faces/FC01.png" width="48" height="48" alt="Facebook friend">
+          </p>
+      </div>
+      <div class="col-6 col-sm-6 col-lg-4 dia_desfile">
+          <h3>Volta, Alice </h3>
+          <p>
+              <img src="img/faces/D03.png" width="48" height="48" alt="Facebook friend">
+              <img src="img/faces/FD03.png" width="48" height="48" alt="Facebook friend">
+          </p>
+      </div>
+      <div class="col-6 col-sm-6 col-lg-4 dia_desfile">
+          <h3>Céu na Terra </h3>
+          <p>
+              <img src="img/faces/B01.png" width="48" height="48" alt="Facebook friend">
+              <img src="img/faces/FB01.png" width="48" height="48" alt="Facebook friend">
+          </p>
+      </div>
+      <div class="col-6 col-sm-6 col-lg-4 dia_desfile">
+          <h3>Cordão da Bola Preta </h3>
+          <p>
+              <img src="img/faces/FD01.png" width="48" height="48" alt="Facebook friend">
+          </p>
+      </div>
+
+      <div class="col-6 col-sm-6 col-lg-4 dia_desfile">
+          <h3>Escravos da Mauá </h3>
+          <p>
+              <img src="img/faces/FD01.png" width="48" height="48" alt="Facebook friend">
+          </p>
+      </div>
+
+
+
+
+
+
+
+
+
+     </div> <!-- friends parades -->
     </div> <!-- friends tab -->
 
     </div> <!-- end of all tab content -->
@@ -142,6 +257,7 @@
             $('#carnival_parades').on('click', '.favorite', SC.changeFavorite);
             $('#itinerary').click(SC.copyFavorites);
             $('#itinerary-share-message').hide();
+            $('#friends-parades').hide();
         </script>
         <!--
         <script>
