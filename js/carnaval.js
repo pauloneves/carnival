@@ -79,5 +79,6 @@ SC.copyFavorites = function () {
 SC.friendsCalled = function() {
     $('#friends-header').text('Call more friends');
     $('#friends-parades').show();
+    $('#num_friends').text('22');
 }
 
