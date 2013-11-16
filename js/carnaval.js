@@ -47,14 +47,9 @@ SC.changeFavorite = function() {
         numItinerary = 0;
     }
     if (el.length === 0) {  //diminuiu
-
-    } else {
-
-    }
-    if (el.length > 0) {
-        numItinerary++;
-    } else {
         numItinerary--;
+    } else {
+        numItinerary++;
     }
     //elNum.text(numItinerary===0 ? 'empty': numItinerary);
     elNum.text(numItinerary);
