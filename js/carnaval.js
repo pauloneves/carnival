@@ -10,8 +10,8 @@ SC.getParadesHTML = function(parades) {
             var parade = parades[day][i];
             if (parade.bairro === 'Centro' || parade.bairro === 'Lapa') {
                 diaHtml += '<li>' +  parade.nome +  ', ' + parade.hora.substring(0,2)
-                           + 'h <span class="glyphicon glyphicon-heart-empty favorite" id="' + parade.nome_url
-                           + '"></span></li>';
+                           + 'h<span class="glyphicon glyphicon-heart-empty favorite" id="' + parade.nome_url
+                           + '"></span> </li>';
                 atLeastOne++;
             }
 

@@ -31,5 +31,37 @@ h1, h2, h3 {
 }
 
 .navbar{
-    color:  #000033;
+    background-image: linear-gradient(rgb(255, 255, 255) 0px, #ffffcc 100%);
+    border-bottom-color: #FFCC66;
+    border-bottom-width: 3px;
+    color: #990000;
+}
+
+
+.navbar a {
+    color: #CC3300;
+}
+
+.navbar-brand {
+    font-weight: bold;
+}
+
+.navbar .navbar-nav>.active>a  {
+    background-image: linear-gradient(white 0px, #FFCC66 120%);
+    color: #990000;
+}
+
+.navbar-nav>li>a:hover {
+    /*background-image: linear-gradient(white 0px, #990000 100%);*/
+    background-image: linear-gradient(white 0px, #FFCC66 120%);
+    color: #990000;
+
+}
+
+.badge {
+    background-color: #FC6;
+}
+
+.jumbotron {
+    background-color: #FFFFEE;
 }
