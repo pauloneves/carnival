@@ -11,8 +11,12 @@
 .glyphicon-heart {
     color: red;
     font-size: 130%;
+    padding-right: 10px;
+    padding-left: 10px;
 }
 
 .glyphicon-heart-empty {
     font-size: 130%;
+    padding-right: 10px;
+    padding-left: 10px;
 }

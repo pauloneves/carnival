@@ -33,8 +33,32 @@ SC.displayParades = function() {
 };
 
 SC.changeFavorite = function() {
-    $(this).toggleClass('glyphicon-heart-empty');
-    $(this).toggleClass('glyphicon-heart');
+    var el = $(this).toggleClass('glyphicon-heart-empty glyphicon-heart').
+       filter('.glyphicon-heart');
+    var lineHeightOriginal = el.css('lineHeight');
+    el.animate({fontSize: '200%', lineHeight: lineHeightOriginal}, 'fast').
+       animate({fontSize: '110%',  lineHeight: lineHeightOriginal},  'fast').
+       animate({fontSize: '200%', lineHeight: lineHeightOriginal}, 'fast').
+       animate({fontSize: '130%', lineHeight: lineHeightOriginal}, 'fast'); //tem que ser igual ao que está no css
+
+    var elNum = $('#num_itinerary');
+    var numItinerary = parseInt(elNum.text());
+    if (isNaN(numItinerary)) {
+        numItinerary = 0;
+    }
+    if (el.length === 0) {  //diminuiu
+
+    } else {
+
+    }
+    if (el.length > 0) {
+        numItinerary++;
+    } else {
+        numItinerary--;
+    }
+    //elNum.text(numItinerary===0 ? 'empty': numItinerary);
+    elNum.text(numItinerary);
+
 };
 
 SC.copyFavorites = function () {
