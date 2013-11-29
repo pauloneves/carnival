@@ -69,10 +69,8 @@
 
     <div class="jumbotron" id="itinerary-message">
       <div class="container">
-        <h1>Your itinerary here!</h1>
-        <p>Select <a href="#parades" onclick="$('#mainTabs a:first').tab('show')">some parades</a> as your favorites clicking in the
-            <span class="glyphicon glyphicon-heart-empty"></span> beside their name.
-            They will be listed here.</p>
+        <p><a href="#parades" onclick="$('#mainTabs a:first').tab('show')">Click the<span class="glyphicon glyphicon-heart-empty"></span> to select your favorite parades</a>.
+        </p>
       </div>
     </div>
 
@@ -81,10 +79,10 @@
         <h1>Share!</h1>
         <p>
             <a title="send to Facebook"
-               href="http://www.facebook.com/sharer.php?s=100&p[title]=Here is my carnival itinerary&p[summary]=Come play carnival with me.&p[url]=http://carnival-rio.herokuapp.com"
+               href="http://www.facebook.com/sharer.php?s=100&p[url]=http://carnival-rio.herokuapp.com&p[title]=Here+is+my+carnival+itinerary&p[summary]=Come+play+carnival+with+me."
                target="_blank">
               Tell your friends
-                <img width="20" height="20" src="img/facebook-logo-3.png" alt="Facebook" />
+                <img width="45" height="45" src="img/facebook-logo-3.png" alt="Facebook" />
             </a>
             <a href=" http://www.facebook.com/share.php?u=http://carnival-rio.herokuapp.com/"></a>
             which parades you plan to attend.
@@ -111,17 +109,15 @@
 
     <div class="jumbotron">
       <div class="container">
-        <h1 id="friends-header">Still no friends here :-(</h1>
-        <p>Your friends must also select their favorite parades to be listed here.
-            <a title="Call your friends!"
-               href="http://www.facebook.com/sharer.php?s=100&p[title]=Create your carnival itinerary&p[summary]=Select your favorite carnival parades so your friends can see where you will play carnival&p[url]=http://carnival-rio.herokuapp.com"
+        <h2 id="friends-header">Still no friends here :-(</h2>
+        <p> <a title="Call your friends!"
+               href="http://www.facebook.com/sharer.php?s=100&p[url]=http://carnival-rio.herokuapp.com&p[title]=Create+your+carnival+itinerary&p[summary]=Select+your+favorite+carnival+parades+so+your+friends+can+see+where+you+will+play+carnival"
                target=_blank onclick="SC.friendsCalled()">
-              Invite your friends
-                <img width="20" height="20" src="img/facebook-logo-3.png" alt="Facebook" />
+                <img width="60" height="60" src="img/facebook-logo-3.png" alt="Facebook" /> Call your friends!
             </a>
             <a href=" http://www.facebook.com/share.php?u=http://carnival-rio.herokuapp.com/"></a>
-            to make their carnival itinerary.
-            <small>(note to evaluators: comeback to this page after clicking in the link above)</small>
+
+
         </p>
       </div>
     </div>
