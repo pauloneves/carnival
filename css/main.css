@@ -27,7 +27,7 @@ ul {
 
 h1, h2, h3 {
     color: #CC3300;
-    margin-bottom: -6px;
+    margin-bottom: -3px;
 }
 
 .navbar{
@@ -56,6 +56,11 @@ h1, h2, h3 {
     background-image: linear-gradient(white 0px, #FFCC66 120%);
     color: #990000;
 
+}
+
+
+.icon-bar {
+    background-color: #990000;
 }
 
 .badge {
